@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <:include file="./common/css.html" title="EasyWeb后台开发框架"/>
+    <:include file="./common/css.html" title="myDemo"/>
+    <style>
+        body{
+            opacity: 0.9;
+        }
+    </style>
 </head>
+
 <body class="layui-layout-body">
+<:include file="./common/snowy.html"/><!--雪花和表情特效-->
 <div class="layui-layout layui-layout-admin">
+    <div class="snow-container"></div>
     <!-- 头部 -->
     <div class="layui-header">
         <div class="layui-logo">
@@ -91,6 +99,7 @@
         });
 
     });
+
 </script>
 </body>
 </html>

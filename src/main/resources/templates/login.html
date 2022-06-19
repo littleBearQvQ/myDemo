@@ -2,16 +2,9 @@
 <html>
 <head>
     <script>if (window !== top) top.location.replace(location.href);</script>
-    <:include file="./common/css.html" title="EasyWeb后台开发框架"/>
+    <:include file="./common/css.html" title="myDemo"/>
     <![endif]-->
     <style>
-        body {
-            background-image: url("assets/images/bg-login.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 100vh;
-        }
-
         body:before {
             content: "";
             background-color: rgba(0, 0, 0, .2);
@@ -151,6 +144,7 @@
     </style>
 </head>
 <body>
+<:include file="./common/snowy.html"/><!--雪花和表情特效-->
 <div class="login-wrapper layui-anim layui-anim-scale layui-hide">
     <form class="layui-form">
         <h2>用户登录</h2>

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.egao</groupId>
-    <artifactId>easyweb-shiro</artifactId>
+    <artifactId>myDemo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>easyweb-shiro</name>
-    <description>easyweb-shiro project for Spring Boot</description>
+    <name>myDemo</name>
+    <description>myDemo project for Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
