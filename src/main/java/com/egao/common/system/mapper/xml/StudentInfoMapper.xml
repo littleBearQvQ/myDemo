@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.egao.common.system.mapper.StudentInfoMapper">
+
+    <resultMap type="com.egao.common.system.entity.StudentInfo" id="StudentInfoMap" autoMapping="true">
+        <result property="id" column="id" jdbcType="INTEGER"/>
+        <result property="studentNo" column="studentNo" jdbcType="VARCHAR"/>
+        <result property="studentName" column="studentName" jdbcType="VARCHAR"/>
+        <result property="studentSex" column="studentSex" jdbcType="VARCHAR"/>
+        <result property="studentSkill" column="studentSkill" jdbcType="VARCHAR"/>
+        <result property="studentLoves" column="studentLoves" jdbcType="VARCHAR"/>
+        <result property="studentBornDate" column="studentBornDate" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <select id="selectAll" resultType="com.egao.common.system.entity.StudentInfo" resultMap="StudentInfoMap">
+        SELECT * FROM studentinfo
+
+    </select>
+    <select id="selectByStudentID" resultType="com.egao.common.system.entity.StudentInfo">
+        SELECT COUNT(1) FROM studentinfo WHERE isDeleted = 0 AND (studentID LIKE {#studentID})
+    </select>
+</mapper>
+

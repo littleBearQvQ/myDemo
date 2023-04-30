@@ -1,6 +1,6 @@
 # 端口
 server:
-  port: 8081
+  port: 9999
 
 # 多环境配置
 spring:
@@ -66,8 +66,9 @@ spring:
 
 # Mybatis-plus配置
 mybatis-plus:
-  mapper-locations: classpath:com/egao/**/*Mapper.xml
-  typeAliasesPackage: com.egao.**.entity
+  mapper-locations: classpath:com/egao/common/system/mapper/xml/*.xml
+  #typeAliasesPackage: com.egao.**.entity
+  typeAliasesPackage: com.egao.common.system.entity
   global-config:
     id-type: 0
     field-strategy: 1
@@ -77,6 +78,7 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
+
 
 
 

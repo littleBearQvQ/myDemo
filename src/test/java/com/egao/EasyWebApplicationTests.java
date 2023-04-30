@@ -1,7 +1,12 @@
 package com.egao;
 
 import com.egao.common.system.entity.EquipmentInfo;
+import com.egao.common.system.entity.StudentInfo;
+import com.egao.common.system.entity.User;
 import com.egao.common.system.service.impl.EquipmentInfoServiceImpl;
+import com.egao.common.system.service.impl.StudentInfoServiceImpl;
+import com.egao.common.system.service.impl.UserRoleServiceImpl;
+import com.egao.common.system.service.impl.UserServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -21,8 +26,34 @@ public class EasyWebApplicationTests {
     @Autowired
     private EquipmentInfoServiceImpl equipmentInfoService;
 
+    @Autowired
+    private StudentInfoServiceImpl studentInfoService;
+
+    @Autowired
+    private UserServiceImpl userService;
+
     @Test
     public void contextLoads() {
+
+        /*Integer i1 = -128;
+        Integer i2 = -128;
+        Integer i3 = 128;
+        Integer i4 = 128;
+        Short i5 = 210;
+
+        System.out.println(i1==i2);
+        System.out.println(i3==i4);*/
+
+
+        /*studentInfoService.list().forEach(infos->{
+            logger.info(infos.toString());
+        });*/
+
+
+        /*studentInfoService.selectAll().forEach(infos->{
+            logger.info(infos.toString());
+        });*/
+
 
         /*equipmentInfoService.list().forEach(infos->{
             logger.info(infos.toString());
@@ -41,6 +72,11 @@ public class EasyWebApplicationTests {
                 "VTC-211BN", 4, "", null, new Date(),
                 null, new Date(), 0)
         );*/
+
+        Date date = new Date("2000-8-9");
+        //date.getDate();
+        logger.info(date.getDate()+"");
+
     }
 
 }
